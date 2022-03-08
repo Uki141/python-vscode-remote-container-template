@@ -1,0 +1,8 @@
+version: "3.8"
+services: 
+  dev:
+    volumes: 
+      - ./app:/usr/src/app
+    environment:
+      - DEV=1
+    command: sleep infinity

@@ -1,13 +1,17 @@
 // See https://aka.ms/vscode-remote/devcontainer.json for format details.
 {
-    "name": "no name",
+    "name": "remove-bg-dev-container",
     "dockerComposeFile": [
       "../docker-compose.yml",
-      "docker-compose.extend.yml"
+      "./docker-compose.development.yml"
     ],
     "service": "dev",
-    "workspaceFolder": "/workspace",
+    "remoteUser": "root",
+    "workspaceFolder": "/usr/src/app",
+    "extensions": [
+      "ms-python.python"
+    ],
     "settings": {
-      "terminal.integrated.shell.linux": "/bin/bash"
+      
     }
   }
